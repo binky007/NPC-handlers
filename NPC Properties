@@ -1,0 +1,22 @@
+local Properties = {}
+
+Properties.Storage = nil
+Properties.SelfCollision =  false
+Properties.PlayerCollision = false
+
+Properties.DisabledHumanoidStates = {
+	Enum.HumanoidStateType.Swimming,
+	Enum.HumanoidStateType.Seated,
+	Enum.HumanoidStateType.Flying,
+	Enum.HumanoidStateType.Ragdoll,
+	Enum.HumanoidStateType.Climbing,
+	Enum.HumanoidStateType.FallingDown,
+}
+
+Properties.lockedTargets = true
+
+Properties.Directory = workspace:FindFirstChild("Spawners")
+
+Properties.VisibleRange = 500
+
+return Properties
